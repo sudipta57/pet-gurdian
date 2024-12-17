@@ -8,12 +8,6 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 
-import {
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  UserButton,
-} from "@clerk/clerk-react";
 import PetDetails from "./pages/PetDetails";
 import Gallary from "./pages/Gallary";
 import About from "./components/About";
