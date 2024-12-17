@@ -132,16 +132,6 @@ export default function Footer() {
                   </span>
                   <span>scooby.care@example.com</span>
                 </p>
-                <p className="flex items-center space-x-2">
-                  <span className="font-bold">
-                    <img
-                      src="/home/social/phone.png"
-                      alt="Phone Icon"
-                      className="w-6 h-4"
-                    />
-                  </span>
-                  <span>(702) 555-0122</span>
-                </p>
               </div>
             </div>
 

@@ -58,30 +58,30 @@ export default function Banner() {
 
   return (
     <div>
-      <div
-        className="relative bg-cover bg-center bg-no-repeat h-screen font-montserrat"
-        style={{
-          backgroundImage: "url('/home/banner_bg.png')",
-        }}
-      >
-        {/* Overlay for dark gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
+      <div className="relative mt-8 md:mt-0">
+        {/* Image */}
+        <div>
+          <img
+            src="/home/banner_bg.png"
+            alt="Category Background"
+            className="w-full h-auto"
+          />
+        </div>
 
-        {/* Content Container */}
-        <div className="relative h-full flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 sm:px-8 lg:px-16">
-          {/* Left Content */}
-          <div className="text-white max-w-lg space-y-4 sm:space-y-6 text-center md:text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#EBDDAE] font-bold leading-tight">
+        {/* Content */}
+        <div className="absolute inset-0 flex items-center justify-start px-6">
+          <div className="md:max-w-xl w-full text-white text-left bg-opacity-50 px-6 md:p-10 rounded-lg">
+            <h1 className="text-xl sm:text-4xl md:text-5xl text-[#EBDDAE] font-bold leading-tight">
               To Ensure Perfect Service Of Your Puppies.
             </h1>
-            <p className="text-[15px] sm:text-[20px] md:text-base text-[#EBDDAE]">
+            <p className="text-[15px] sm:text-[20px] md:text-base text-[#EBDDAE] mt-4 hidden md:block">
               Pellentesque maximus augue orci, quis congue purus iaculison id.
               Maecenas eu lorem quisesdoi massal molestie vulputate in sitagi
               amet diam. Cras eu odio sit amet ipsum cursus for that gone
               pellentesquea. Vestibulum ut aliquet risus. In hac habitasse
               plateajoa dictumst. Nuncet posuere scelerisque justo in accumsan.
             </p>
-            <button className="bg-[#EBDDAE] text-[#060608] font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-yellow-300">
+            <button className="bg-[#EBDDAE] text-[#060608] font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-yellow-300 mt-6">
               MAKE A RESERVATION
             </button>
           </div>

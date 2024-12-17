@@ -3,30 +3,38 @@ import React from "react";
 export default function Category() {
   return (
     <div>
-      <div
-        className="relative bg-cover bg-center min-h-[500px] flex items-center justify-end px-4 md:px-12  mt-8 ml-6 mr-8"
-        style={{ backgroundImage: "url('/home/category_bg.png')" }} // Replace with your background image path
-      >
-        {/* Text Section */}
-        <div className="w-full md:w-1/2 text-white text-left p-6 md:p-10 rounded-lg">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            One More Friend
-          </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-            Thousands More Fun!
-          </h2>
-          <p className="text-sm md:text-base mb-6">
-            Having a pet means you have more joy, a new friend, a happy person
-            who will always be with you to have fun. We have 200+ different pets
-            that can meet your needs!
-          </p>
-          <div className="flex flex-col md:flex-row gap-4">
-            <button className="bg-transparent text-white border-2 border-white px-4 py-2 rounded hover:bg-white hover:text-black transition">
-              View Intro
-            </button>
-            <button className="bg-[#F7EAD8] text-black px-4 py-2 rounded hover:bg-yellow-400 transition">
-              Explore Now
-            </button>
+      <div className="relative md:px-10 mt-8">
+        {/* Image */}
+        <div>
+          <img
+            src="/home/category_bg.png"
+            alt="Category Background"
+            className="w-full h-auto"
+          />
+        </div>
+
+        {/* Content */}
+        <div className="absolute top-0 md:right-0 h-full md:flex items-center md:justify-end px-6">
+          <div className="w-full md:w-1/2 text-white text-left px-6 md:p-10 rounded-lg">
+            <h1 className="text-sm md:text-5xl font-bold md:mb-4 text-black md:text-white">
+              One More Friend
+            </h1>
+            <h2 className="text-sm md:text-3xl font-semibold md:mb-6">
+              Thousands More Fun!
+            </h2>
+            <p className="text-sm md:text-base mb-6 hidden md:block">
+              Having a pet means you have more joy, a new friend, a happy person
+              who will always be with you to have fun. We have 200+ different
+              pets that can meet your needs!
+            </p>
+            <div className="flex flex-row gap-4 mt-3">
+              <button className="bg-transparent text-white border-2 border-white px-1 md:px-4 md:py-2 rounded hover:bg-white hover:text-black transition">
+                View Intro
+              </button>
+              <button className="bg-[#F7EAD8] text-black px-1 md:px-4 md:py-2 rounded hover:bg-yellow-400 transition">
+                Explore Now
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -165,3 +173,30 @@ export default function Category() {
     </div>
   );
 }
+
+// previous banner code
+
+// <div
+//   className="relative bg-cover bg-center min-h-[500px] flex items-center justify-end px-4 md:px-12 mt-8 ml-6 mr-8"
+//   style={{ backgroundImage: "url('/home/category_bg.png')" }} // Replace with your background image path
+// >
+//   <div className="w-full md:w-1/2 text-white text-left p-6 md:p-10 rounded-lg">
+//     <h1 className="text-4xl md:text-5xl font-bold mb-4">One More Friend</h1>
+//     <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+//       Thousands More Fun!
+//     </h2>
+//     <p className="text-sm md:text-base mb-6">
+//       Having a pet means you have more joy, a new friend, a happy person who
+//       will always be with you to have fun. We have 200+ different pets that can
+//       meet your needs!
+//     </p>
+//     <div className="flex flex-col md:flex-row gap-4">
+//       <button className="bg-transparent text-white border-2 border-white px-4 py-2 rounded hover:bg-white hover:text-black transition">
+//         View Intro
+//       </button>
+//       <button className="bg-[#F7EAD8] text-black px-4 py-2 rounded hover:bg-yellow-400 transition">
+//         Explore Now
+//       </button>
+//     </div>
+//   </div>
+// </div>;

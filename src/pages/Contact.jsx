@@ -3,17 +3,38 @@ import React from "react";
 export default function Contact() {
   return (
     <div>
-      <div
+      <div className="relative mt-8 md:mt-0 ">
+        {/* Image */}
+        <div>
+          <img
+            src="/home/contact_bg.png"
+            alt="Category Background"
+            className="w-full h-auto"
+          />
+        </div>
+
+        {/* Content */}
+        <div className="absolute md:top-0 left-0 top-10 right-0 h-full md:flex items-center md:justify-end px-6">
+          <div className="w-full md:w-1/2 text-white text-left px-6 md:p-10 rounded-lg">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+              Contact US
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      {/* prev implementation */}
+
+      {/* <div
         className="relative bg-cover bg-center min-h-[600px] flex items-center justify-end px-4 md:px-12 z-20 mt-8 ml-6 mr-8"
         style={{ backgroundImage: "url('/home/contact_bg.png')" }} // Replace with your background image path
       >
-        {/* Text Section */}
         <div className="w-full md:w-1/2 text-white text-left p-6 md:p-10 rounded-lg">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Contact US
           </h1>
         </div>
-      </div>
+      </div> */}
 
       {/* contact section */}
       <div className="bg-white py-10 md:py-16">
@@ -90,10 +111,6 @@ export default function Contact() {
               CONTACT <span className="text-yellow-600">INFO</span>
             </h3>
             <ul className="text-gray-700 space-y-4 text-sm">
-              <li>
-                <span className="font-bold text-[15px]">Phone</span> <br />
-                (702) 555-0122
-              </li>
               <li>
                 <span className="font-bold">Email</span> <br />
                 scooby.care@example.com

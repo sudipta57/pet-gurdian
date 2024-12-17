@@ -36,11 +36,41 @@ export default function About() {
   ];
   return (
     <div>
-      <div
+      <div className="relative md:px-10 mt-10">
+        {/* Image */}
+        <div>
+          <img
+            src="/home/about_bg.png"
+            alt="Category Background"
+            className="w-full h-auto"
+          />
+        </div>
+
+        {/* Content */}
+        <div className="absolute top-0 left-0 right-0 h-full md:flex items-center md:justify-end px-6">
+          <div className="w-full md:w-1/2 text-white text-left px-6 md:p-10 rounded-lg">
+            <h1 className="text-md md:text-5xl font-bold md:mb-4 md:text-[#191919] text-[#EBDDAE]">
+              Flexible and reliable care for your pet
+            </h1>
+
+            <p className="text-xs md:text-base md:mb-6 md:text-[#191919] text-white">
+              Experienced, Animal-loving Pet Sitters
+            </p>
+            <div className="flex flex-col md:flex-row gap-4 mt-2">
+              <button className="bg-[#191919] text-[#EBDDAE] px-4 py-2 rounded-full ">
+                Request Services
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* previous implementation */}
+
+      {/* <div
         className="relative bg-cover bg-center min-h-[500px] flex items-center justify-end px-4 md:px-12 mt-8 ml-6 mr-8"
         style={{ backgroundImage: "url('/home/about_bg.png')" }} // Replace with your background image path
       >
-        {/* Text Section */}
         <div className="w-full md:w-1/2 text-white text-left p-6 md:p-10 rounded-lg">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#191919]">
             Flexible and reliable care for your pet{" "}
@@ -55,7 +85,7 @@ export default function About() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <section className="bg-white py-12 px-4 sm:px-8 lg:px-16">
         <div className="container mx-auto flex flex-col lg:flex-row items-center gap-8">
