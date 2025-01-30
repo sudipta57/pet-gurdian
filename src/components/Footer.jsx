@@ -159,7 +159,7 @@ export default function Footer() {
           {/* Footer Bottom */}
           <div className="mt-10 border-t border-[#000000] pt-5 text-gray-600 flex flex-col md:flex-row justify-between text-xs">
             <p>Privacy Policy | Terms and Conditions</p>
-            <p>Copyright@REAL-E-12 | developed by SECWEBXPERTS PVT. LTD.</p>
+            <p>Copyright@PET-GURADIAN | developed by SECWEBXPERTS PVT. LTD.</p>
           </div>
         </div>
       </div>
