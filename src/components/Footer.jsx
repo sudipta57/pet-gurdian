@@ -159,9 +159,7 @@ export default function Footer() {
           {/* Footer Bottom */}
           <div className="mt-10 border-t border-[#000000] pt-5 text-gray-600 flex flex-col md:flex-row justify-between text-xs">
             <p>Privacy Policy | Terms and Conditions</p>
-            <p>
-              Copyright 2024 Pets | Design by Secwebxperts. All Rights Reserved
-            </p>
+            <p>Copyright@REAL-E-12 | developed by SECWEBXPERTS PVT. LTD.</p>
           </div>
         </div>
       </div>
