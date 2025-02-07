@@ -12,49 +12,65 @@ const petphotos = [
 
 export default function Gallary() {
   return (
-    <div className="max-w-screen-xl mx-auto">
-      <div className="relative mt-10">
-        {/* Background Image */}
-        <div className="flex justify-center">
-          <img
-            src="/gallary/bg-banner.png"
-            alt="bg-img"
-            className="w-full h-auto"
-          />
-        </div>
+    <div className="bg-[#EBDDAE]">
+      <div className="bg-white mt-4 pb-6">
+        <div className="relative max-w-[1300px] mx-auto">
+          {/* Background Image */}
+          <div className="flex justify-center">
+            <img
+              src="/gallary/bg-banner.png"
+              alt="bg-img"
+              className="w-full h-auto"
+            />
+          </div>
 
-        {/* Content Layer */}
-        <div className="absolute top-1/2 left-8 transform -translate-y-1/2">
-          <h2 className="md:text-4xl font-bold text-gray-800 md:mb-4">
-            OUR HAPPY MOMENTS
-          </h2>
-          <p className="text-lg text-gray-600 md:mb-6 my-2">
-            We bring joys and loves to your besties
-          </p>
-          <button className="bg-black text-white md:py-2 md:px-6 px-2 py-1 rounded-3xl hover:bg-gray-800">
-            Explore Now
-          </button>
+          {/* Content Layer */}
+          <div className="absolute top-1/2 left-8 font-Montserrat
+              transform -translate-y-1/2">
+            <h2 className="md:text-4xl font-[700] text-[#191919] md:mb-4">
+              OUR HAPPY MOMENTS
+            </h2>
+            <p className="text-lg text-[#191919] font-[500] md:mb-6 my-2">
+              We bring joys and loves to your besties
+            </p>
+            <button className="bg-black text-[#EBDDAE] md:py-2 md:px-6 px-2 py-1 rounded-3xl hover:bg-gray-800">
+              Explore Now
+            </button>
+          </div>
+
         </div>
       </div>
 
-      <div className=" my-10">
-        <h2 className="text-3xl font-bold mb-6">
-          Your Pet Is Our <span className="text-[#BF985F]">Family</span> Member
-          <span role="img" aria-label="paw">
-            🐾
-          </span>
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-          {petphotos.map((photo) => (
-            <div className="m-2">
-              <img src={photo} alt="img" />
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-center">
-          <button className="bg-black text-white p-2 px-4 rounded-3xl">
-            See Gallary ->
-          </button>
+      <div className="bg-white mx-auto mt-2 py-10">
+        <div className=" max-w-[1300px] mx-auto mb-6">
+          <h2 className="text-[36px] font-montserrat flex items-center space-x-2 font-[700] mb-6 text-[#191919]">
+            Your Pet Is Our <span className="text-[#BF985F] space-x-2"> Family </span>{"  "}
+            Member
+            <span
+              role="img"
+              aria-label="paw"
+              className="inline-flex items-center"
+            >
+              <img
+                src="/home/style_icon.png"
+                alt="Paw Icon"
+                className="w-6 h-6"
+              />
+            </span>
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+            {petphotos.map((photo) => (
+              <div className="m-2">
+                <img src={photo} alt="img" />
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center">
+            <button className="bg-black text-[#EBDDAE] p-2 px-4 rounded-3xl">
+              View More →
+            </button>
+          </div>
         </div>
       </div>
     </div>

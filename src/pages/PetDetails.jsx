@@ -50,16 +50,17 @@ const CustomSlider = () => {
       {/* Custom Navigation Buttons */}
       <button
         onClick={() => sliderRef.current.slickPrev()} // Move to the previous slide
-        className="absolute left-0 top-[40%] transform -translate-y-1/2 bg-[#FFFFFF66] text-white rounded-full w-10 h-10 flex items-center justify-center z-10"
+        className="absolute left-0 top-[40%] transform -translate-y-1/2  rounded-full w-10 h-10 flex items-center justify-center z-10"
       >
-        &#8249;
+        <img src="/home/l.png" alt="Previous" className="w-10 h-10" />
       </button>
       <button
         onClick={() => sliderRef.current.slickNext()} // Move to the next slide
-        className="absolute right-0 top-[40%] transform -translate-y-1/2 bg-[#FFFFFF66] text-white rounded-full w-10 h-10 flex items-center justify-center z-10"
+        className="absolute right-0 top-[40%] transform -translate-y-1/2  rounded-full w-10 h-10 flex items-center justify-center z-10"
       >
-        &#8250;
+        <img src="/home/r.png" alt="Next" className="w-10 h-10" />
       </button>
+
       {/* Custom Pagination */}
       <div className="flex justify-center mt-4">
         <div className="flex space-x-4 overflow-x-auto scrollbar-hide w-full max-w-[500px]">
@@ -86,14 +87,14 @@ const CustomSlider = () => {
 
 const PetDetails = () => {
   return (
-    <div className="font-sans bg-white text-gray-700">
+    <div className="font-sans bg-white text-gray-700 mt-2">
       {/* Container */}
       <div className="container mx-auto p-4 md:p-8 flex flex-col md:flex-row">
         {/* Left Section - Slider */}
         <div className="w-full md:w-1/2">
           <CustomSlider />
           {/* Guarantees */}
-          <div className="flex justify-between mt-20 items-center bg-[#FCEED5] p-4 rounded-lg">
+          <div className="flex justify-between mt-10 items-center bg-[#FCEED5] p-4 rounded-lg">
             <div className="flex items-center space-x-2">
               <img
                 src="/pet-details/icon1.png"
@@ -118,6 +119,9 @@ const PetDetails = () => {
 
           {/* Share Section */}
           <div className="mt-6 flex items-center">
+            {/* Share Icon Before Text */}
+            <img src="/home/shear.png" alt="Share Icon" className="w-6 mr-2" />
+
             <span className="font-semibold mr-4">Share:</span>
             <div className="flex space-x-4">
               <a href="#">
@@ -144,7 +148,7 @@ const PetDetails = () => {
               <a href="#">
                 <img
                   src="/pet-details/youTube.png"
-                  alt="youTube"
+                  alt="YouTube"
                   className="w-6"
                 />
               </a>
@@ -154,29 +158,34 @@ const PetDetails = () => {
 
         {/* Right Section - Pet Details */}
         <div className="w-full md:w-1/2 mt-6 md:mt-0 md:pl-8">
-          <p className="text-[#667479]">
-            Home <span>.</span> Category <span>.</span>Small Dog <span>.</span> Shiba Inu Sepia
+          <p className="text-[#667479] font-[400]">
+            Home <span className="mx-1">&gt;</span> Category{" "}
+            <span className="mx-1">&gt;</span> Small Dog{" "}
+            <span className="mx-1">&gt;</span> Shiba Inu Sepia
           </p>
-          <p className="text-sm text-gray-500 mt-4">SKU #1000078</p>
-          <h1 className="text-[24px] font-bold text-[#BF985F] mt-2">
+
+          <p className="text-[14px] font-[400] text-[#99A2A5] mt-4">
+            SKU #1000078
+          </p>
+          <h1 className="text-[24px] font-[700] text-[#BF985F] mt-2">
             Shiba Inu Sepia
           </h1>
-          <p className="text-2xl font-semibold text-[#002A48] mt-2">
+          <p className="text-[20px] font-[600] text-[#002A48] mt-2">
             34.000.000 VND
           </p>
 
           <div className="flex space-x-4 mt-4">
-            <button className="px-4 py-2 bg-[#EBDDAE] text-white rounded-2xl shadow hover:bg-yellow-500">
+            <button className="px-4 py-2 bg-[#EBDDAE] text-[16px] font-[600] text-[#060608] rounded-full">
               Contact us
             </button>
-            <button className="px-4 py-2 border border-[#EBDDAE] rounded-lg shadow hover:bg-yellow-50">
+            <button className="px-4 py-2 border border-[#EBDDAE] font-[600] text-[16px] rounded-full text-[#060608]">
               💬 Chat with Monito
             </button>
           </div>
 
           {/* Table */}
-          <div className="mt-6">
-            <table className="table-auto w-full text-sm">
+          <div className="mt-6 text-[#667479] font-[500]">
+            <table className="table-auto w-full text-[14px]">
               <tbody>
                 {[
                   { label: "SKU", value: "#1000078" },
@@ -216,12 +225,17 @@ const PetDetails = () => {
       <div className="max-w-screen-xl mx-auto mt-8 mb-8 px-4">
         {/* Header */}
         <p>What's new?</p>
-        <h2 className="text-3xl font-bold text-[#BF985F] mb-6">
+        <h2 className="text-3xl font-bold text-[#BF985F] mb-6 inline-flex items-center">
           See more puppies
-          <span role="img" aria-label="paw">
-            🐾
+          <span role="img" aria-label="paw" className="ml-2">
+            <img
+              src="/home/style_icon.png"
+              alt="Paw Icon"
+              className="w-6 h-6"
+            />
           </span>
         </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
           <div className="mx-2 card p-4 shadow-xl rounded-md">
             <img src="/pet-details/puppy1.png" alt="" />
@@ -320,10 +334,10 @@ const LovelyCustomerSlider = () => {
     <div className="border-t mt-10">
       <div className="max-w-screen-xl mx-auto mt-8 mb-8 px-4 ">
         {/* Header */}
-        <h2 className="text-3xl font-bold text-[#BF985F] mb-6">
+        <h2 className="text-3xl font-bold text-[#BF985F] mb-6 space-x-4 inline-flex items-center">
           Our lovely customer
-          <span role="img" aria-label="paw">
-            🐾
+          <span role="img" aria-label="paw" className="ml-2">
+            <img src="/home/style_icon.png" />
           </span>
         </h2>
 

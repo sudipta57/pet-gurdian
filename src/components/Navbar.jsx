@@ -51,10 +51,10 @@ export default function Navbar() {
             <div className="hidden sm:flex items-center space-x-6">
               {[
                 { label: "HOME", href: "/" },
-                { label: "CATEGORY", href: "/category" },
-                { label: "ABOUT US", href: "/about" },
-                { label: "BLOG", href: "/blog" },
-                { label: "CONTACT US", href: "/contact" },
+                { label: "CATEGORY", href: "/our-category" },
+                { label: "ABOUT US", href: "/about-us" },
+                { label: "BLOG", href: "/our-blog" },
+                { label: "CONTACT US", href: "/contact-us" },
               ].map((link, index) => (
                 <Link
                   key={index}
@@ -92,10 +92,10 @@ export default function Navbar() {
             <div className="sm:hidden bg-[#EBDDAE] px-4 py-6">
               {[
                 { label: "HOME", href: "/" },
-                { label: "CATEGORY", href: "/category" },
-                { label: "ABOUT US", href: "/about" },
-                { label: "BLOG", href: "/blog" },
-                { label: "CONTACT US", href: "/contact" },
+                { label: "CATEGORY", href: "/our-category" },
+                { label: "ABOUT US", href: "/about-us" },
+                { label: "BLOG", href: "/our-blog" },
+                { label: "CONTACT US", href: "/contact-us" },
               ].map((link, index) => (
                 <Link
                   key={index}

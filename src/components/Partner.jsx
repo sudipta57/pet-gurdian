@@ -12,7 +12,7 @@ export default function Partner() {
     { src: "/home/partner8.png", alt: "Pet Sitting 2" },
   ];
   return (
-    <div>
+    <div className="bg-[#FFFFFF] mt-2">
       <div className="bg-gray-50 py-12">
         <div className="text-center mb-8">
           <div className="flex justify-center mb-4">
@@ -24,16 +24,16 @@ export default function Partner() {
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 px-6 md:px-12">
+        <div className="grid relative max-w-[1100px] mx-auto flex items-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 px-6 md:px-12">
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 flex items-center justify-center"
+              className="bg-white rounded-lg shadow hover:shadow-lg w-[226px] h-[130px] transition duration-300 flex items-center justify-center"
             >
               <img
                 src={partner.src}
                 alt={partner.alt}
-                className="max-h-16 object-contain"
+                className="max-h-20 object-contain"
               />
             </div>
           ))}

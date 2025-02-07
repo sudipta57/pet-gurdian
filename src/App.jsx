@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import ScrollToTop from "./components/ScrolltoTop";
+import Profile from "./pages/Profile";
 function App() {
   return (
     <>
@@ -26,12 +27,12 @@ function App() {
           <Route path="/pet-details" element={<PetDetails />} />
           <Route path="/gallary-screen" element={<Gallary />} />
           <Route path="/" element={<Home />} />
-          <Route path="/category" element={<Category />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/our-category" element={<Category />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/our-blog" element={<Blog />} />
           <Route path="/blog-details" element={<BlogDetails />} />
-
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/my-profile" element={<Profile />} />
+          <Route path="/contact-us" element={<Contact />} />
 
           {/* Catch-all Route for 404 */}
           <Route path="*" element={<NotFound />} />

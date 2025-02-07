@@ -34,7 +34,9 @@ export default function Contact() {
             Contact US
           </h1>
         </div>
-      </div> */}
+      </div>
+      <div className="h-2 w-full bg-[#EBDDAE]"></div>
+
 
       {/* contact section */}
       <div className="bg-white py-10 md:py-16">
@@ -42,7 +44,7 @@ export default function Contact() {
           {/* Form Section */}
           <div>
             <h2 className="text-3xl font-semibold mb-6">
-              Get In <span className="text-yellow-600 font-bold">Touch</span>
+              Get In <span className="text-[#BF985F] font-bold">Touch</span>
             </h2>
             <form className="space-y-4">
               <div className="bg-gray-100 rounded-md">
@@ -94,10 +96,10 @@ export default function Contact() {
                   className="w-full bg-gray-100 p-3 rounded-md focus:outline-none text-sm"
                 ></textarea>
               </div>
-              <div className="flex justify-center mt-4">
+              <div className="flex left-0 mt-6">
                 <button
                   type="submit"
-                  className="bg-black text-white py-3 px-6 rounded-full hover:bg-gray-800 transition-all duration-300"
+                  className="bg-black text-[#EBDDAE] w-[462px] py-3 px-6 rounded-full hover:bg-gray-800 transition-all duration-300"
                 >
                   Send Message
                 </button>
@@ -108,7 +110,7 @@ export default function Contact() {
           {/* Contact Info Section */}
           <div className="lg:w-3/4 xl:w-2/3">
             <h3 className="text-xl w-full font-semibold mb-6">
-              CONTACT <span className="text-yellow-600">INFO</span>
+              CONTACT <span className="text-[#BF985F]">INFO</span>
             </h3>
             <ul className="text-gray-700 space-y-4 text-sm">
               <li>
@@ -126,7 +128,7 @@ export default function Contact() {
               </li>
               <li>
                 <span className="font-bold">
-                  VISITING <span className="text-yellow-600">ADDRESS</span>
+                  VISITING <span className="text-[#BF985F]">ADDRESS</span>
                 </span>
                 <br />
                 4517 Washington Ave. <br />
@@ -136,9 +138,9 @@ export default function Contact() {
             </ul>
           </div>
         </div>
-
-        {/* Map Section */}
-        <div className="mt-12">
+      </div>
+      {/* Map Section */}
+      <div className="mt-12 px-4 mx-auto pb-4">
           <iframe
             title="map"
             src="https://maps.google.com/maps?q=Frankfurt&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -147,7 +149,6 @@ export default function Contact() {
             loading="lazy"
           ></iframe>
         </div>
-      </div>
     </div>
   );
 }

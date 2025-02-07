@@ -42,65 +42,37 @@ export default function Blog() {
     // Duplicate for demonstration purposes
   ];
   return (
-    <div className="max-w-8xl mx-auto px-4 py-8">
-      <div className="relative">
-        {/* Image */}
-        <div>
-          <img
-            src="/home/blog_bg.png"
-            alt="Category Background"
-            className="w-full h-auto"
-          />
-        </div>
-
-        {/* Content */}
-        <div className="absolute top-0 left-0 right-0 h-full md:flex items-center md:justify-end px-6">
-          <div className="w-full md:w-1/2 text-white text-left px-6 md:p-10 rounded-lg">
-            <h1 className="text-[26px] md:text-5xl font-bold md:mb-4 text-[#EBDDAE] my-2 md:my-0">
-              Articles & news
-            </h1>
-
-            <p className="text-sm md:text-base p-10 mb-6 text-[#EBDDAE] hidden md:block">
-              We know your pets are cherished members of your family. That's why
-              we provide loving, personalized pet sitting services tailored to
-              their needs.
-            </p>
-            <div className="md:flex md:flex-row gap-4 right-0">
-              <button className="bg-[#EBDDAE] text-[#00171F] md:px-4 md:py-2 rounded-full px-2">
-                Book Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* prev implementation */}
-      {/* <div
-        className="relative bg-cover bg-center min-h-[500px] flex items-center justify-end px-4 md:px-12 "
+    <div className="max-w-7xl mx-auto px-4 py-8 ">
+      <div
+        className="relative bg-cover bg-center min-h-[500px] flex items-center justify-start px-4 md:px-12"
         style={{ backgroundImage: "url('/home/blog_bg.png')" }} // Replace with your background image path
       >
-        <div className="w-full md:w-1/2 text-white text-left p-6 md:p-10 rounded-lg">
+        {/* Text Section */}
+        <div className="w-full md:w-1/2 text-white text-right p-6 md:p-10 rounded-lg ml-auto">
+
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#EBDDAE]">
-            Articles & news
+            Articles & News
           </h1>
 
-          <p className="text-sm md:text-base p-10 mb-6 text-[#EBDDAE]">
+          <p className="text-[12px] md:text-base font-[500] mb-6 text-[#EBDDAE]">
             We know your pets are cherished members of your family. That's why
             we provide loving, personalized pet sitting services tailored to
-            their needs.{" "}
+            their needs.
           </p>
-          <div className="flex flex-col md:flex-row gap-4 right-0">
-            <button className="bg-[#EBDDAE] text-[#00171F] px-4 py-2 rounded-full ">
+
+          <div className="flex flex-col md:flex-row gap-4 justify-end">
+            <button className="bg-[#EBDDAE] text-[#00171F] font-[600] px-4 py-2 rounded-full">
               Book Now
             </button>
           </div>
         </div>
-      </div> */}
+      </div>
+      <div className="bg-[#EBDDAE] w-full h-2"></div>
 
       {/* list of blog scetion */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-          Latest <span className="text-yellow-500 ml-1">Blog</span> Posts
+          Latest <span className="text-[#BF985F] ml-1">Blog</span> Posts
           <span className="ml-2">
             <img
               src="/home/style_icon.png"
@@ -113,10 +85,11 @@ export default function Blog() {
         {/* Responsive grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {blogPosts.map((post, index) => (
-            <Link to="/blog-details">
+            <Link to="/blog-details" key={index}>
               <div
-                key={index}
-                className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 
+                   border-2 border-transparent hover:border-[#EBDDAE]"
+
               >
                 {/* Image */}
                 <img
@@ -131,7 +104,8 @@ export default function Blog() {
                     {post.title}
                   </h3>
                   <div className="flex justify-between items-center text-sm text-gray-500">
-                    <span className=" text-yellow-600 px-3 py-1 rounded-full border border-[#BF985F]">
+                    <span className="text-yellow-600 px-3 py-1 rounded-full border border-[#BF985F]">
+
                       ADOPTING A PET
                     </span>
                     <span>{post.date}</span>
@@ -142,6 +116,7 @@ export default function Blog() {
           ))}
         </div>
       </div>
+      <div className="bg-[#EBDDAE] w-full h-2"></div>
 
       {/* end banner section */}
       <div className="max-w-7xl mx-auto px-4 py-8">

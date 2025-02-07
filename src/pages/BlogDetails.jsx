@@ -60,11 +60,11 @@ export default function BlogDetails() {
         </div>
 
         {/* Content Section */}
-        <div className="mt-8 text-gray-700 leading-relaxed">
+        <div className="mt-8 text-gray-700 leading-relaxed pb-6">
           {/* Section 1 */}
           <h2 className="text-xl md:text-2xl font-bold mb-4">
-            HOW TO <span className="text-yellow-500">CHOOSE</span> WHEN TO{" "}
-            <span className="text-yellow-500">ADOPT</span> A NEW PET?
+            HOW TO <span className="text-[#BF985F]">CHOOSE</span> WHEN TO{" "}
+            <span className="text-[#BF985F]">ADOPT</span> A NEW PET?
           </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper
@@ -97,8 +97,8 @@ export default function BlogDetails() {
 
           {/* Section 2 */}
           <h3 className="text-lg md:text-xl font-bold mt-8">
-            SHOULD I <span className="text-yellow-500">ADOPT A CAT</span>, OR A{" "}
-            <span className="text-yellow-500">DOG</span>?
+            SHOULD I <span className="text-[#BF985F]">ADOPT A CAT</span>, OR A{" "}
+            <span className="text-[#BF985F]">DOG</span>?
           </h3>
           <p className="mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper
@@ -107,11 +107,12 @@ export default function BlogDetails() {
             imperdiet nisi auctor. Sagittis quis curabitur morbi tincidunt.
           </p>
         </div>
+        <div className="bg-[#EBDDAE] w-full h-2"></div>
 
         <div className="bg-[#FFFFFF] mt-3 py-10">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 flex items-center justify-center gap-2">
-              Latest <span className="text-yellow-500">Blog</span> Posts
+              Latest <span className="text-[#BF985F]">Blog</span> Posts
               <span className="inline-block w-6 h-6">
                 <img
                   src="/home/style_icon.png"
@@ -125,7 +126,7 @@ export default function BlogDetails() {
               {blogPosts.map((post, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+                  className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 border-2 border-transparent hover:border-[#EBDDAE]"
                 >
                   <img
                     src={post.image}

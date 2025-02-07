@@ -44,11 +44,12 @@ export default function Testimonial() {
   ];
 
   return (
-    <div>
+    <div className="bg-[#FFFFFF] mt-2">
+      <div className="relative max-w-[1100px] mx-auto items-center">
       <div
-        className="to-black py-10 px-5 md:px-20"
+        className="to-black py-10 px-5 md:px-20 "
         style={{
-          background: "linear-gradient(to right, #F7F6F2 50%, #202020 50%)",
+          background: "linear-gradient(to right,#FFFFFF 50%, #202020 50%)",
           zIndex: -1,
         }}
       >
@@ -101,7 +102,7 @@ export default function Testimonial() {
                   slidesPerView: 2, // 2 slides for medium screens (tablets)
                 },
                 1024: {
-                  slidesPerView: 3, // 3 slides for large screens (desktops)
+                  slidesPerView: 2, // 3 slides for large screens (desktops)
                 },
               }}
             >
@@ -111,7 +112,7 @@ export default function Testimonial() {
                     <p className="text-sm md:text-base mb-4">
                       {testimonial.text}
                     </p>
-                    <div className="flex items-center mt-4">
+                    <div className=" items-center mt-4">
                       <img
                         src={testimonial.image}
                         alt={testimonial.name}
@@ -129,6 +130,7 @@ export default function Testimonial() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 }

@@ -12,27 +12,29 @@ export default function Footer() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="py-10 px-5 md:px-20">
+        <div className=" px-5 md:px-20">
           {/* Newsletter Section */}
-          <div className="bg-black text-white p-5 rounded-full flex flex-col md:flex-row justify-between items-center">
-            <h2 className="text-[30px] text-[#EBDDAE] px-4 font-libre font-semibold mb-4 md:mb-0 text-sm md:text-[30px] leading-tight md:leading-[1.5]">
-              Our Newsletter <br /> Subscription
-            </h2>
+          <div className="">
+            <div className="bg-black relative max-w-[1200px] mx-auto flex items-center text-white p-5 rounded-full flex flex-col md:flex-row justify-between items-center">
+              <h2 className="text-[30px] text-[#EBDDAE] px-4 font-libre font-semibold mb-4 md:mb-0 text-sm md:text-[30px] leading-tight md:leading-[1.5]">
+                Our Newsletter <br /> Subscription
+              </h2>
 
-            <div className="flex items-center bg-white rounded-full px-2 w-full md:w-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-transparent outline-none p-2 text-black w-full"
-              />
-              <button className="bg-yellow-500 px-4 py-4 rounded-full hover:bg-yellow-600 flex items-center space-x-2 r-[-10px]">
-                <span>Subscribe</span>
-                <img
-                  src="/home/subscribe.png"
-                  alt="Subscribe Icon"
-                  className="w-4 h-4"
+              <div className="flex items-center bg-white rounded-full w-full md:w-auto mr-6">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="bg-transparent outline-none p-2 text-black w-full"
                 />
-              </button>
+                <button className="bg-[#EBDDAE] px-10 py-5 rounded-full hover:bg-yellow-600 flex items-center justify-center">
+                  <span className="text-[#060608] text-[15px]">Subscribe</span>
+                  <img
+                    src="/home/subscribe.png"
+                    alt="Subscribe Icon"
+                    className="w-3 h-3 ml-2"
+                  />
+                </button>
+              </div>
             </div>
           </div>
 
@@ -98,7 +100,8 @@ export default function Footer() {
                   "Blog",
                   "Contact Us",
                 ].map((link) => (
-                  <li key={link}>
+                  <li key={link} className="flex items-center">
+                    <span className="text-[#060608] mr-2">›</span>
                     <a href="#" className="hover:text-yellow-500">
                       {link}
                     </a>
@@ -132,13 +135,24 @@ export default function Footer() {
                   </span>
                   <span>scooby.care@example.com</span>
                 </p>
+                <p className="flex items-center space-x-2">
+                  <span className="font-bold">
+                    <img
+                      src="/home/social/phone.png"
+                      alt="Phone Icon"
+                      className="w-6 h-4"
+                    />
+                  </span>
+                  <span>(702) 555-XXX</span>
+                </p>
+
               </div>
             </div>
 
             {/* Instagram Section */}
             <div>
               <h3 className="font-semibold mb-3">@Instagram</h3>
-              <div className="grid grid-cols-2 gap-2 md:gap-2 lg:gap-2">
+              <div className="grid grid-cols-2 gap-1 md:gap-2 lg:gap-2 max-w-[250px]">
                 {[
                   "/home/insta/insta1.png",
                   "/home/insta/insta2.png",
@@ -160,7 +174,8 @@ export default function Footer() {
           <div className="mt-10 border-t border-[#000000] pt-5 text-gray-600 flex flex-col md:flex-row justify-between text-xs">
             <p>Privacy Policy | Terms and Conditions</p>
             <p>
-              Copyright @ PET-GURADIAN | developed by SECWEBXPERTS PVT. LTD.
+              Copyright @ PET-GURADIAN | Developed By SECWEBXPERTS PVT. LTD.
+
             </p>
           </div>
         </div>

@@ -32,8 +32,8 @@ export default function Bolgs() {
     },
   ];
   return (
-    <div>
-      <section className="bg-gray-50 py-12">
+    <div className="bg-[#FFFFFF] mt-2">
+      <section className=" py-12 relative max-w-[1100px] mx-auto flex items-center">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Header */}
           <div className="mb-8">
@@ -68,7 +68,7 @@ export default function Bolgs() {
             {blogs.map((blog) => (
               <div
                 key={blog.id}
-                className="bg-[#191919] shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className=" overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 {/* Image */}
                 <img
@@ -78,22 +78,24 @@ export default function Bolgs() {
                 />
 
                 {/* Content */}
-                <div className="p-4 font-poppins">
-                  <p className="text-[#EBDDAE] text-sm mb-1 flex items-center">
-                    <span className="mr-2">
-                      <img src="/home/blog/date.png" />
-                    </span>
-                    {blog.date}
-                  </p>
-                  <h3 className="text-[12px]  text-[#EBDDAE] mb-2">
-                    {blog.title}
-                  </h3>
-                  <a
-                    href="#"
-                    className="text-[#EBDDAE] text-[15px] font-semibold hover:underline"
-                  >
-                    Read More
-                  </a>
+                <div className="bg-[#191919] mt-[-20px] relative mr-0 z-20 mx-2">
+                  <div className="p-2 font-poppins">
+                    <p className="text-[#EBDDAE] text-sm mb-1 mt-[-7px] flex items-center">
+                      <span className="mr-2">
+                        <img src="/home/blog/date.png" alt="Date Icon" />
+                      </span>
+                      {blog.date}
+                    </p>
+                    <h3 className="text-[12px] text-[#EBDDAE] mt-2 mb-2">
+                      {blog.title}
+                    </h3>
+                    <a
+                      href="#"
+                      className="text-[#EBDDAE] text-[15px] font-semibold hover:underline"
+                    >
+                      Read More
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
